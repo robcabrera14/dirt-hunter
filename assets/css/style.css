@@ -1,0 +1,409 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&family=Open+Sans:wght@300;400;500;700&display=swap');
+
+/* css resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* general styling */
+:root {
+  --light-color-1: #fff;
+  --light-color-2: #f4f4f4;
+  --light-color-3: #f1f1f1;
+  --dark-color-1: #000;
+  --dark-color-2: #222;
+  --dark-color-3: #333;
+  --grey-color-1: #ddd;
+  --special-color-1: #915cb7;
+  --special-color-2: #7a44a1;
+  --special-color-3: #785492;
+  --h1: 5rem;
+  --h2: 4rem;
+  --h3: 2rem;
+  --small: 1.3rem;
+  --normal: 1.6rem;
+  --btn-xy-normal: 1rem 4rem;
+  --btn-xy-big: 1.5rem 5rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--dark-color-3);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+p,
+a {
+  font-size: var(--normal);
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+  font-size: var(--normal);
+}
+
+/* utility classes */
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.btn {
+  background-color: var(--special-color-1);
+  color: var(--light-color-1) !important;
+  border-radius: 0.5rem;
+  padding: var(--btn-xy-normal);
+  transition: 0.3s ease-in-out all;
+}
+
+.btn:hover {
+  background-color: var(--special-color-2);
+}
+
+.text-end {
+  text-align: end;
+}
+
+/* navbar styling */
+.navbar {
+  background: linear-gradient(to bottom, #f4f4f4 30%, #ffffff);
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+
+.navbar-toggle-btn {
+  display: none;
+}
+
+.navbar-toggle-line {
+  height: 0.4rem;
+  width: 3rem;
+  margin-bottom: 0.5rem;
+  background-color: var(--dark-color-3);
+}
+
+.navbar-logo {
+  height: 5rem;
+  width: 5rem;
+}
+
+.navbar-menu {
+  list-style: none;
+}
+
+.navbar-item {
+  display: inline-block;
+  padding-inline: 1rem;
+}
+
+.navbar-link {
+  padding: 1rem;
+  color: var(--dark-color-2);
+}
+
+/* hero section styling */
+.hero .container {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-col {
+  flex: 1;
+}
+
+.hero-heading {
+  font-family: 'Changa One', cursive;
+  color: var(--special-color-1);
+  margin-bottom: 2rem;
+}
+
+.hero-paragraph {
+  max-width: 600px;
+  margin-bottom: 4rem;
+  font-weight: lighter;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: var(--btn-xy-big);
+}
+
+.hero-img {
+  width: 100%;
+  display: block;
+}
+
+/* pricing section styling */
+.pricing {
+  background-color: var(--light-color-2);
+  text-align: center;
+  padding-bottom: 10rem;
+}
+
+.pricing-heading {
+  font-family: 'Changa One', cursive;
+  color: var(--special-color-1);
+  margin-top: -5rem;
+  margin-bottom: 5rem;
+}
+
+.pricing-cards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  background-color: var(--light-color-1);
+  flex: 1 calc(100% / 3 - 2rem);
+  border-radius: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  z-index: 2;
+}
+
+.pricing-card-heading {
+  background-color: var(--special-color-1);
+  padding: 1rem;
+  color: var(--light-color-1);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.pricing-card-body {
+  padding: 1rem;
+}
+
+.pricing-card-body i {
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--special-color-1);
+}
+
+.pricing-card-list {
+  margin-bottom: 2rem;
+}
+
+.pricing-card-list-item {
+  list-style: none;
+  font-size: var(--normal);
+  display: block;
+  padding: 1rem 0;
+  border-top: 1px solid var(--grey-color-1);
+}
+
+.pricing-card-list-item:last-child {
+  border-bottom: 1px solid var(--grey-color-1);
+  font-size: var(--h3);
+  font-weight: bold;
+}
+
+.pricing-card-btn {
+  display: inline-block;
+}
+
+#main-footer {
+  background-color: var(--special-color-1);
+}
+
+.footer-flex {
+  padding: 5rem 0;
+  display: flex;
+}
+
+.social-media {
+  flex: 1;
+  padding: 2rem 0;
+}
+
+.social-media-heading {
+  color: var(--light-color-1);
+  margin-bottom: 1rem;
+}
+
+.social-media-list {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+.social-media-link {
+  font-size: 2.5rem;
+}
+
+.social-media-link i {
+  color: var(--light-color-1);
+}
+
+.contact-form {
+  flex: 1;
+  background-color: var(--light-color-2);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.contact-form-heading {
+  color: var(--special-color-1);
+  margin-bottom: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  padding: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--grey-color-1);
+}
+
+.contact-btn {
+  border: none;
+  cursor: pointer;
+}
+
+.copyright {
+  border-top: 1px solid var(--special-color-3);
+  padding: 2rem;
+  text-align: center;
+  font-size: var(--small);
+  color: var(--light-color-3);
+}
+
+/* breakpoints */
+@media (max-width: 768px) {
+  :root {
+    --h1: 4.5rem;
+    --h2: 3.5rem;
+    --h3: 1.8rem;
+    --btn-xy-big: 1.2rem 4rem;
+  }
+
+  .navbar {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+
+  .navbar .container {
+    padding: 1rem 0;
+  }
+
+  .navbar-toggle-btn {
+    display: block;
+  }
+
+  .navbar-item:last-child .navbar-link {
+    background-color: transparent;
+    color: var(--dark-color-3) !important;
+  }
+
+  .navbar-menu {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .navbar-link {
+    display: block;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .hero .container {
+    padding: 5rem 0 0;
+    display: block;
+    text-align: center;
+  }
+
+  .hero-col-1 {
+    margin-bottom: 2rem;
+  }
+
+  .hero-col-2 {
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 80%;
+    margin: auto;
+  }
+
+  .pricing {
+    padding-bottom: 2rem;
+    margin-top: 4rem;
+  }
+
+  .pricing-card-heading {
+    margin-top: 0;
+  }
+
+  .pricing-cards {
+    display: block;
+  }
+
+  .pricing-card {
+    margin-bottom: 2rem;
+  }
+
+  .footer-flex {
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .social-media {
+    order: 2;
+    margin-top: 1rem;
+  }
+
+  .social-media-list {
+    justify-content: center;
+  }
+
+  .social-media-heading {
+    display: none;
+  }
+
+  .contact-form {
+    order: 1;
+  }
+}
